@@ -1,0 +1,122 @@
+.sidebar {
+  height: auto;
+  width: 20%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar .sb-header {
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+}
+
+.sb-header > div {
+  margin-left: 10%;
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+.logo,
+.sb-header a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.sb-header .search {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.sb-header .search input {
+  width: 80%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 20px;
+  border: none;
+  background-color: #ebebeb;
+  border: 1px solid rgb(201, 201, 201);
+}
+
+.sb-header .search input:focus {
+  outline: none;
+}
+
+.sb-header .search button {
+  width: 20%;
+  border-top: 1px solid rgb(201, 201, 201);
+  border-right: 1px solid rgb(201, 201, 201);
+  border-left: none;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #ebebeb;
+}
+
+.sb-header .search button:hover {
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.sb-header .search button:active {
+  background-color: rgb(223, 223, 223);
+  cursor: pointer;
+}
+
+.sb-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px; // Thụt vào bên trái
+    right: 10px; // Thụt vào bên phải
+    height: 1px;
+    background-color: rgb(201, 201, 201);
+  }
+}
+
+.sb-list div {
+  height: 40px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.sb-list div:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.sb-list a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.sb-list a i {
+  margin-right: 15px;
+  margin-left: 5%;
+}

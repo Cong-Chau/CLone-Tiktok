@@ -1,0 +1,74 @@
+.search-results {
+  width: 70%;
+  padding-top: 40px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.search-results div {
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.search-results video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-results video:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-results h1,
+.search-results p {
+  padding-left: 10px;
+}
+
+.search-results h1 {
+  font-size: 1.1em;
+  width: max-content;
+  height: 30px;
+}
+
+.search-results h1 i {
+  margin-right: 5px;
+}
+
+.search-results p {
+  width: 230px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-results .user-info {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-results .like-count {
+  height: 20px;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+.search-results .like-count i {
+  margin-right: 5px;
+}
+
+.search-results .date-upload {
+  font-size: 1.3rem;
+  height: 30px;
+  width: max-content;
+  margin-top: 18px;
+}
+
+.search-results a:hover {
+  text-decoration: underline;
+}

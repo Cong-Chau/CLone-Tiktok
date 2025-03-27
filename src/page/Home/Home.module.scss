@@ -1,0 +1,92 @@
+.home-page {
+  height: 100vh;
+}
+
+.video-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-list .video {
+  height: 95vh;
+  display: flex;
+  margin-left: 20%;
+  margin-bottom: 30px;
+}
+
+.video-list .video-container {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  //   object-fit: cover;
+}
+
+.video-container video {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.video-container .user-name,
+.video-container .desc {
+  color: rgb(243, 243, 243);
+  margin-left: 13px;
+  z-index: 10;
+}
+
+.video-container .user-name {
+  margin-top: -100px;
+  height: auto;
+  display: inline-block;
+  width: fit-content;
+}
+
+.video-container .user-name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.video-container .desc {
+  max-width: 300px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: flex;
+  align-items: flex-start;
+}
+
+.video .video-info {
+  width: 60px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.video .video-info div {
+  width: 60px;
+  height: 60px;
+}
+
+.video-info .user-info button {
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.video-info button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 50%;
+}
+
+.video-info button:hover {
+  cursor: pointer;
+}
+.link i {
+  color: red;
+}
